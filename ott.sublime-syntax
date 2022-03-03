@@ -14,5 +14,6 @@ contexts:
     - match: '\b(-)?[0-9.]+\b'
       scope: constant.numeric.ott
 
+    # Comments
     - match: (%).*$\n?
       scope: comment.line.ott
