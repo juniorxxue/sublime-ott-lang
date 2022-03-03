@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+file_extensions:
+  - ott
+scope: source.ott
+contexts:
+  main:
+    # Keywords
+    - match: '\b(metavar|indexvar|grammar|embed|subrules|contextrules|substitutions|single|multiple|freevars|defns|defn|by|homs|funs|fun|parsing|begincoqsection|endcoqsection|coqvariable|left|right|terminals|formula|judgement)\b'
+      scope: keyword.control.ott
+
+    # Numbers
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.ott
