@@ -13,3 +13,6 @@ contexts:
     # Numbers
     - match: '\b(-)?[0-9.]+\b'
       scope: constant.numeric.ott
+
+    - match: (%).*$\n?
+      scope: comment.line.ott
